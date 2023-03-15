@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
+import MyComponent from "./components/ClassComponentExample";
 import UserProfile from "./components/UserProfile";
+import Counter from "./components/Counter";
 
 
 
@@ -78,24 +80,31 @@ const userDetailsList = [
 
 const App = () => (
 
-  <div>
-    <h1>Users List</h1>
 
-    <ul>
-
-      {userDetailsList.map((eachItem) => (
-        <UserProfile userDetails={eachItem} key={eachItem.uniqueNo}></UserProfile>
-      ))}
-
-      {/* <UserProfile userDetails={userDetailsList[0]}></UserProfile>
-      <UserProfile userDetails={userDetailsList[1]}></UserProfile>
-      <UserProfile userDetails={userDetailsList[2]}></UserProfile> */}
-    </ul>
+  <Counter></Counter>
 
 
+  // <MyComponent name="Rajesh"></MyComponent>
 
 
-  </div>
+  // <div>
+  //   <h1>Users List</h1>
+
+  //   <ul>
+
+  //     {userDetailsList.map((eachItem) => (
+  //       <UserProfile userDetails={eachItem} key={eachItem.uniqueNo}></UserProfile>
+  //     ))}
+
+  //     {/* <UserProfile userDetails={userDetailsList[0]}></UserProfile>
+  //     <UserProfile userDetails={userDetailsList[1]}></UserProfile>
+  //     <UserProfile userDetails={userDetailsList[2]}></UserProfile> */}
+  //   </ul>
+
+
+
+
+  // </div>
 
 )
 
